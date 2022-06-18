@@ -17,6 +17,3 @@ tee.sort(reverse=True) #정렬해서 뺌
 for i in range(n-k):
     del tee[i]
 '''    
-
-
-
