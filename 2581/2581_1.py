@@ -13,7 +13,3 @@ if len(arr)==0:
 else:
     print(sum(arr))
     print(arr[0])
-                   
-    
-        
-    
