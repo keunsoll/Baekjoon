@@ -48,10 +48,9 @@ for i in range(m):
     if len(data) == 1:
         if data[0] == 'all':
             s = all()
-            print(s)
+
         else:
             s = empty()
-            print(s)
 
     else:
         x = int(data[1])
