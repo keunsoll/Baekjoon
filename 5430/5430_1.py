@@ -1,6 +1,5 @@
 t = int(input())
 
-# def R(a):
 
 for i in range(t):
     func = list(input())
@@ -26,4 +25,4 @@ for i in range(t):
 
 
 # 1. r d 함수 설계 r: reverse d: pop.left(비어 있으면 error)-> 배열 자체가 0이면 빈배열
-#
+# 시간초과

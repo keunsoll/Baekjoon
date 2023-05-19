@@ -14,7 +14,7 @@ for i in range(n):
             else:
                 print("NO")
                 break
-    else:
+    else:   # for-esle문
         if len(stack) == 0:
             print("YES")
         else:
