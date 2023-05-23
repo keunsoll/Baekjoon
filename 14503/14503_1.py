@@ -41,13 +41,13 @@ while True:
     else:
         rotate_cnt += 1
     if rotate_cnt == 4:
-            nx = x-dx[d]
-            ny = y-dy[d]
-            # 뒤로 갈 수 있다면
-            if room[nx][ny] == 0:
-                x, y = nx, ny
-            else:
-                break
+        nx = x-dx[d]
+        ny = y-dy[d]
+        # 뒤로 갈 수 있다면
+        if room[nx][ny] == 0:
+            x, y = nx, ny
+        else:
+            break
         rotate_cnt = 0
 
 print(cnt)
