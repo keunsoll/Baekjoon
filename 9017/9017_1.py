@@ -25,5 +25,9 @@ for i in range(t):
             score += rank[j][k]
         res[j].append(score)
         res[j].append(rank[j][5])
+
     res.sort(key=lambda x: (x[1], x[2]))
     print(res[0][0])
+
+
+# 세 가지 요소만 뽑아서 정렬
