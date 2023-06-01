@@ -1,11 +1,14 @@
 n, taesu, p = map(int, input().split())
-score = list(map(int, input().split()))
+
+
 # print(score)
 
-rank = 0
-if not score:
+
+if n == 0:
     print(1)
 else:
+    rank = 0
+    score = list(map(int, input().split()))
     if n == p and score[-1] >= taesu:
         rank = -1
     else:
@@ -13,5 +16,8 @@ else:
             if score[i] <= taesu:
                 rank = i+1
                 break
+            # 새로운 점수보다 작거나 같은 점수가 없을 때 가장 낮은 등수
+            else:
+                rank = n+1
 
     print(rank)
