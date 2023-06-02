@@ -16,5 +16,6 @@ for i in range(h):
                 time.append(cnt)
             else:
                 time.append(-1)
+
     for j in time:
         print(j, end=" ")
