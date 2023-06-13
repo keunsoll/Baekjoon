@@ -59,6 +59,7 @@
 # # print(room)
 
 
+# 참고
 p, m = map(int, input().split())
 people = []
 for i in range(p):
@@ -90,7 +91,7 @@ for i in range(len(rooms)):
         ans = sorted(rooms[i][1], key=lambda x: x[1])
         print(ans)
         for j in range(m):
-            print(*ans[j], sep=' ')
+            print(*ans[j])
     else:
         print('Waiting!')
         ans = sorted(rooms[i][1], key=lambda x: x[1])
