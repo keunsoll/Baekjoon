@@ -46,5 +46,5 @@ while True:
         break
 
 print(time-1)
-print(res)
+# print(res)
 print(res[-2])
