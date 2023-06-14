@@ -23,14 +23,14 @@ ans.append("".join(word))
 
 for i in range(n):
     word = find(word)
-    print(word)
+    # print(word)
 
     # 같은 단어가 나오면 중지 -> 주기 한 바퀴 돎
     if word in ans:
         break
 
     ans.append(word)
-print(ans)
+
 
 per = len(ans)
 print(ans[n % per])
