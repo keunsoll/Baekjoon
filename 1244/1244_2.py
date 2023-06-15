@@ -14,12 +14,13 @@ def change(num):
 for i in range(sn):
     gender, num = map(int, input().split())
 
+    # 남자
     if gender == 1:
         for i in range(num, len(switch)):
             if i % num == 0:
                 change(i)
+    # 여자            
     else:
-
         for i in range(n//2):
             if num-i < 1 or num+i > n:
                 break
