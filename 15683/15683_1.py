@@ -3,7 +3,7 @@ import copy
 n, m = map(int, input().split())
 cctv = []  # cctv 번호, 좌표
 mode = [[], [[0], [1], [2], [3]], [[0, 2], [1, 3]], [[0, 1], [1, 2], [2, 3], [0, 3]],
-        [[0, 1, 2], [0, 1, 3], [1, 2, 3], [0, 2, 3]], [[0, 1, 2, 3]],
+        [[0, 1, 2], [0, 1, 3], [1, 2, 3], [0, 2, 3]], [[0, 1, 2, 3]]
         ]  # 각 cctv의 방향정보
 
 # 북 동 남 서
@@ -16,8 +16,8 @@ for i in range(n):
     arr = list(map(int, input().split()))
     room.append(arr)
     for j in range(m):
-        if arr[i] in [1, 2, 3, 4, 5]:
-            cctv.append([arr[i], i, j])
+        if arr[j] in [1, 2, 3, 4, 5]:
+            cctv.append([arr[j], i, j])
 
 
 def watch(room, mode, x, y):
