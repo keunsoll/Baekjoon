@@ -1,3 +1,4 @@
+# 다시
 a, b = map(int, input().split())
 n, m = map(int, input().split())
 
@@ -82,3 +83,4 @@ while True:
         break
     else:
         break
+
